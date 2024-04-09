@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Artiom - Form</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <script src="js/form.js"></script>
+</head>
+
+<body class = "backgr">
+    <header class="fade-in">
+        <h1 id = "bighead">Form</h1>
+        <nav>
+            <div class = "navdiv">
+                <a href="index.html">Home</a> 
+                <a href="about.html">About</a> 
+                <a href="form.html">Form</a>
+            </div>
+        </nav> 
+        <hr>
+    </header>
+    <form id="myForm" action="/submit" method="post" onsubmit="return validateForm()">
+        <p>
+            <br>
+            <label>Salutation
+
+            <select name="salutation">
+
+            <option>--None--</option>
+            <option>Mr.</option>
+            <option>Ms.</option>
+            <option>Mrs.</option>
+            <option>Dr.</option>
+            <option>Prof.</option>
+            
+            </select>
+
+            </label>
+        </p>
+
+            <p> <label>First name: <input id ="name" name="firstName " /></label></p>
+            <p><label>Last name: <input name="lastName" /></label></p>
+            <p>Gender:
+            <label><input type="radio" name="gender" value="male" />Male</label>
+            <label><input type="radio" name="gender" value="female" />Female</label>
+            </p>
+            <p><label>Email: <input id ="email" type="email" name="email" /></label></p>
+            <p><label>Date of Birth: <input type="date" name="birthDate"></label></p>
+            <p> <label>Country: <input name="country" /></label></p>
+            <p><label>Address: <textarea name="address" cols="30" rows="3"> </textarea></label></p>
+            
+            <p>
+            <label>Interests: 
+                <br>  
+                <input type="checkbox" id="music" name="music" />
+                <label for="music">Music</label>
+                <br>
+                <input type="checkbox" id="games" name="games" />
+                <label for="games">Games</label>
+                <br>
+                <input type="checkbox" id="sport" name="sport" />
+                <label for="sport">Sport</label>
+           
+            </Label>
+            </p>
+
+            <p>
+                <label>Profile picture:
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+                </label>
+            </p>
+
+            <p>
+                <label>Upload CV (PDF Only):
+                    <input type="file" id="cv" name="cv" accept="application/pdf" />
+                </label>
+            </p>
+
+            <p>
+                <label>Communication Preferences: 
+                    <br>  
+                    <input type="checkbox" id="Email" name="Email" />
+                    <label for="Email">Email</label>
+                    <br>
+                    <input type="checkbox" id="SMS" name="SMS" />
+                    <label for="SMS">SMS</label>
+               
+                </Label>
+                </p>
+
+            <p><button type="submit">Submit</button></p>
+    </form>
+
+    <footer>
+        <div class = "footerContainer"></div>
+            <h2>Contacts</h2>
+            <div class = "footerContacts">
+                <ul>
+                    <li><a href="mailto: aleliuhin@gmail.com" target=”_blank”>Email</a></li>
+                    <li><a href="https://github.com/ALeliuhin" target=”_blank”>GitHub</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target=”_blank”>Important</a></li>
+                    <li><a href="tel:+40774617402" target=”_blank”>+40774617402</a></li>
+                </ul>
+            </div>
+
+            <div class = "footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+
+            </div>
+        </div>
+        &copy; 2024 Artiom's Blog
+    </footer>
+
+</body>
+
+</html>

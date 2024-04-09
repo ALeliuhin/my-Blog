@@ -1,0 +1,368 @@
+p {
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin-left: 60px;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.3;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.3s ease-out;
+}
+
+#quote {
+    font-style: italic;
+    margin-left: 30px;
+    width: 400px;
+    text-indent: 30px;
+    text-align: justify;
+ 
+}
+
+.prehead {
+    border: 1.2px solid #727cff;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin-left: 110px;
+}
+
+.navdiv {
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.navdiv a {
+    display: inline-block;
+    padding: 10px 20px; 
+    margin-right: 40px; 
+
+    text-decoration: none;
+    background-color: #0a5dbb; 
+    font-size: 18px;
+    color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.332);
+
+    border: 1px solid #005ce6; 
+    border-radius: 10px; 
+    transition: background-color 0.6s, color 0.6s; 
+    font-family: Georgia, serif;
+}
+
+.navdiv a:hover {
+    background-color: #021842; 
+    color: #ffffff; 
+}
+
+#bighead {
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color:  #84a5eb;
+    background: linear-gradient(90deg, rgba(53, 95, 232, 0.872) 20%, rgb(120, 162, 255) 68%, rgb(10, 148, 176) 100%);
+
+    font-family: Verdana, sans-serif;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.199);
+    margin: 30px;
+    padding: 20px;
+    margin-top: 40px;
+
+    background-position: center;
+    border-radius: 20px;
+
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px; /* Add padding to create space from left and right edges */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.div1{
+    margin-left: 40px;
+}
+.div2 {
+    margin-right: 40px;
+}
+
+.ihead {
+
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+
+    width: 400px;
+
+    border: 0.15em solid #6881ef; 
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.175);
+    font-family: Verdana, sans-serif;
+}
+
+#headcenter {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;       
+    margin-bottom: 30px;
+}
+
+.backgr {
+    margin: 0px;
+    background-image: 
+      linear-gradient(
+        to right in oklab,
+        oklch(37% 0.26 259) 0%, 61%, oklch(81% 0.5 204) 100%
+      );
+}
+
+#avatar {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+footer {
+
+    margin: auto;
+    border-radius: 20px;
+
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    background: #0a5dbb;
+    position: static;
+    padding: 10px;
+    clear: both; 
+    text-align: center;
+    bottom: 0;
+    
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.footerContacts ul,
+.footerNav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerContacts li,
+.footerNav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footerContacts a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #5749f1;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.footerContacts a:hover {
+    background-color: #021842;
+    transition: background-color 0.6s, color 0.6s;
+}
+
+.footerNav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    
+}
+
+.footerNav a:hover {
+    color: #021842;
+    transition: color 0.6s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+table.rounded {
+    border-radius: 20px; 
+    overflow: hidden;
+    margin-top: 21px;
+}
+  
+th, td {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 8px;
+    text-align: center;
+    border: 1.2px solid #727cff;
+}
+  
+th {
+    background-color: #5749f1;
+}
+  
+tr:hover {
+    background-color: #5749f1;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.ulTop {
+    list-style-type: none;
+    padding: 0;
+}
+
+.liTop {
+    color:#ffffff;
+
+    font-family: Arial, sans-serif;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1.2px solid #727cff;
+    border-radius: 5px;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.liTop:hover {
+    background-color: #5749f1;
+}
+
+.moveContent {
+    margin-left: 30px;
+}
+
+
+@media screen and (max-width: 1090px) {
+    .container {
+        display: flex;
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+        flex-direction: column; /* Arrange items in a column */
+    }
+    
+    .ihead {
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .prehead {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+
+    p {
+        margin: auto;
+    }
+
+    table {
+        justify-content: center;
+        margin: auto;
+        
+    }
+
+    .div1,
+    .div2 {
+        width: 100%; 
+        max-width: 600px; 
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    .liTop {
+        margin-right: auto;
+    }
+
+    table {
+        width: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #bighead {
+        font-size: 24px;
+        margin: 20px; 
+    }
+    
+    .navdiv {
+        justify-content: center; 
+    }
+
+    .navdiv a {
+        display: block;
+        margin: 10px; 
+    }
+
+    .ihead {
+        width: auto; 
+        margin: 10px; 
+        padding: 10px; 
+    }
+
+
+    .footerContainer {
+        flex-direction: column; 
+    }
+
+    .footerContacts li,
+    .footerNav li {
+        margin: 5px; 
+    }
+
+    .footerContacts a {
+        padding: 5px 10px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .div1,
+    .div2 {
+        margin: auto;
+    }
+
+    #quote {
+        line-height: 1.5; 
+        margin: auto;
+        width: auto; 
+        text-indent: 0; 
+        text-align: left; 
+    }
+
+}

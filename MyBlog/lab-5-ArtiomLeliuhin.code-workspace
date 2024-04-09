@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../lab-5-ArtiomLeliuhin"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MyBlog"
+	}
+}
