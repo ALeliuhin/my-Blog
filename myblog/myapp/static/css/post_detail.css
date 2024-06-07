@@ -1,0 +1,39 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+p {
+    max-width: 250px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ihead {
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.175);
+    font-family: Verdana, sans-serif;
+}
+
+.backgr {
+    margin: 0px;
+    background-image: 
+      linear-gradient(
+        to right in oklab,
+        oklch(37% 0.26 259) 0%, 61%, oklch(81% 0.5 204) 100%
+      );
+}

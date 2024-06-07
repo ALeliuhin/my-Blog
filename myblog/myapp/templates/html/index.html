@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artiom - Home</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css'%}">
+    <script src="{% static 'js/index_BackToTop.js'%}"></script>
+    <script src="{% static 'js/index_SearchPosts.js'%}"></script>
+</head>
+<body class="backgr">
+    <header class="fade-in">
+        <h1 id="bighead">Artiom's Blog</h1>
+        <nav>d
+            <div class="navdiv">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'form' %}">Form</a>
+                <a href="{% url 'gallery' %}">Gallery</a>
+                <a href="{% url 'chatbot' %}">ChatBot</a>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <main class="fade-in">
+        <div id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton" onclick="searchPosts()">Search</button>
+        </div>
+
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top </button>
+        <div>
+            <section>
+                <h1 class="ihead">Home Page</h1>
+                <p>By Artiom, Posted on 06.03.2024</p>
+                <img src="{% static 'Images/greece-beach.JPEG' %}" alt="Greece" title="Greece">
+                <p>In this Blog I would like to show the life of a UVT Computer Science student.<br>
+                    You will see information about my education, projects and what my interests are.
+                </p>
+            </section>
+        </div>
+
+        {% block content %}
+        {% for post in posts %}
+        <article>
+            <h1 class="ihead">{{ post.title }}</h1>
+            <p id="ppostid">Posted on {{ post.post_date }}</p>
+            <img src="{{ post.image.url }}" alt="imgimg">
+            <p>{{ post.paragraph }}</p>
+            <a href="{% url 'post_detail' post.id %}">{{ post.title }}</a>
+        </article>
+        {% endfor %}
+        <section>
+            <h2 class="ihead">Reviews</h2>
+            <ul>
+           {% for review in reviews %}
+                <li>
+                    <p><strong>{{ review.email }}</strong> ({{ review.date }})</p>
+                    <p>Rating: {{ review.rating }}</p>
+                    <p>{{ review.comment }}</p>
+                    <a href="{% url 'update_review' review.id %}">Update</a>
+                    <a href="{% url 'delete_review' review.id %}">Delete</a>
+                </li>
+            {% endfor %}
+            </ul>
+            <a href="{% url 'submit_review' %}">Leave a Review</a>
+        </section>
+        {% endblock %}
+    </main>
+
+    
+    <footer>
+        <div class="footerContainer"></div>
+        <h2>Contacts</h2>
+        <div class="footerContacts">
+            <ul>
+                <li><a href="mailto: aleliuhin@gmail.com" target="_blank">Email</a></li>
+                <li><a href="https://github.com/ALeliuhin" target="_blank">GitHub</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Important</a></li>
+                <li><a href="tel:+40774617402" target="_blank">+40774617402</a></li>
+            </ul>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'form' %}">Form</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li><a href="{% url 'chatbot' %}">ChatBot</a></li>
+            </ul>
+        </div>
+        &copy; 2024 Artiom's Blog
+    </footer>
+</body>
+</html>
